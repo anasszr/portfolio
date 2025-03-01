@@ -1,1 +1,31 @@
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+h2 {
+    color: #343a40;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.jumbotron {
+    background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffd700;
+}
+
+footer {
+    background-color: #212529;
+    color: #fff;
+}
