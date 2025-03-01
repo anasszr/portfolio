@@ -4,73 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamza's Portfolio</title>
+    <title>Hamza's Developer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="70">
 
-<header>
-    <h1>Hamza's Developer Portfolio</h1>
-    <p>This website was created temporarily for an assignment.</p>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#">Hamza</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
-<section id="summary">
-    <h2>Summarizing Statement</h2>
+<!-- Hero Section -->
+<div class="jumbotron text-center bg-primary text-white">
+    <h1 class="display-4">Hamza's Developer Portfolio</h1>
+    <p>This website was created temporarily for an assignment.</p>
+</div>
+
+<!-- Summary Section -->
+<section id="summary" class="container my-5">
+    <h2 class="text-center mb-4">Summarizing Statement</h2>
     <p>I am a software developer with a passion for building efficient and user-friendly applications.</p>
 </section>
 
-<section id="education">
-    <h2>Education</h2>
-    <ul>
-        <li>Computer Systems Technician - Software Support, Mohawk College</li>
+<!-- Education Section -->
+<section id="education" class="container my-5">
+    <h2 class="text-center mb-4">Education</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Computer Systems Technician - Software Support, Mohawk College</li>
     </ul>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Java, C#, JavaScript, PHP, Python</li>
-        <li>Git, GitHub, Agile Development</li>
-        <li>HTML, CSS, Bootstrap</li>
-    </ul>
+<!-- Skills Section -->
+<section id="skills" class="container my-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row text-center">
+        <div class="col-md-4">Java</div>
+        <div class="col-md-4">C#</div>
+        <div class="col-md-4">JavaScript</div>
+        <div class="col-md-4">PHP</div>
+        <div class="col-md-4">Python</div>
+        <div class="col-md-4">HTML & CSS</div>
+    </div>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li><strong>Facial Expression Generation:</strong> A deep learning model to synthesize facial expressions using GANs.</li>
-        <li><strong>Marching Ants PHP:</strong> A PHP project implementing custom sorting algorithms.</li>
-    </ul>
+<!-- Projects Section -->
+<section id="projects" class="container my-5">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Facial Expression Generation</h5>
+                    <p class="card-text">A deep learning model to synthesize facial expressions using GANs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Marching Ants PHP</h5>
+                    <p class="card-text">A PHP project implementing custom sorting algorithms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="resume">
-    <h2>Resume</h2>
-    <a href="resume.pdf" target="_blank">Download Resume</a>
+<!-- Resume Section -->
+<section id="resume" class="container my-5 text-center">
+    <h2 class="mb-4">Resume</h2>
+    <a class="btn btn-primary" href="resume.pdf" target="_blank">Download Resume</a>
 </section>
 
-<section id="contact">
-    <h2>Contact Information</h2>
-    <p>Email: hamza@example.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hamza">linkedin.com/in/hamza</a></p>
+<!-- Contact Section -->
+<section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Contact Information</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
 </section>
 
-<footer>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2024 Hamza</p>
 </footer>
 
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 
 </html>
-
